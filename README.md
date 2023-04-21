@@ -9,7 +9,7 @@
   Figure 1: Progressive-Hint Prompting (PHP) interacts with LLM.
 </p>
 
-PHP: Simple and Efficient Design for Semantic Segmentation with Transformers.<br>
+PHP: Simple and Effective for improving LLM reasoning ability.<br>
 [Chuanyang Zheng](https://chuanyang-zheng.github.io/), [Zhengying Liu](https://scholar.google.com/citations?user=DFme0joAAAAJ&hl=fr), [Enze Xie](https://xieenze.github.io/), [Zhenguo Li](https://www.ee.columbia.edu/~zgli/) and [Yu Li](https://liyu95.com)<br>
 [Preprint  Paper](https://arxiv.org/abs/2304.09797)
 
