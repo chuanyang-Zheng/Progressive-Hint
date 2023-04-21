@@ -17,7 +17,8 @@ This repository contains the official Pytorch implementation of code for [PHP](h
 PHP is a simple, effective and powerful method, as shown in Figure 1. It is can be easily combined with preivious works such as Chain-of-Thought and Self-Consistency, as they are orthogonal.
 
 ##GSM8K Dataset Leaderboard
-We achieve the SOTA performance on GSM8K dataset, as the [Leaderboard of PaperWithCode](https://paperswithcode.com/sota/arithmetic-reasoning-on-gsm8k)
+
+We achieve the SOTA performance on GSM8K dataset, as the shown in [Leaderboard of PaperWithCode](https://paperswithcode.com/sota/arithmetic-reasoning-on-gsm8k) (Date: April 21, 2023)
 <div align="center">
   <img src="resources/leaderboard.png">
 </div>
