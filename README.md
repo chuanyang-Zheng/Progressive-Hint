@@ -3,7 +3,7 @@
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg)
 
 <div align="center">
-  <img src="resources/img.png"  height="400" >
+  <img src="resources/img.png">
 </div>
 <p align="center">
   Figure 1: Progressive-Hint Prompting (PHP) interacts with LLM.
@@ -44,7 +44,7 @@ bash bash/cot.sh
 ## Result
 We Only show Complex CoT with GPT-3.5-Turbo and GPT-4 Here. For more experiments results (such as text-davinci-002 and text-davinci-003), please refer to our [Paper](https://arxiv.org/abs/2304.09797).
 <div align="center">
-  <img src="resources/table_8.png" height="400">
+  <img src="resources/table_8.png">
 </div>
 <p align="center">
   Table 8: Progressive-Hint Prompting (PHP) with GPT-3.5-Turbo and GPT-4. PHP works better when the model is more powerful.
