@@ -1,0 +1,31 @@
+Q: John found that the average of 15 numbers is 40. If 10 is added to each number then the mean of the numbers is? (Hint: The answer is near to (a)).
+Answer Choices: (a) 50 (b) 45 (c) 65 (d) 78 (e) 64
+A: We know the Answer Hints: (a). With the Answer Hints: (a), we will answer the question. The answer is (a).
+
+Q: If a / b = 3/4 and 8a + 5b = 22,then find the value of a. (Hint: The answer is near to (b)).
+Answer Choices: (a) 1/2 (b) 3/2 (c) 5/2 (d) 4/2 (e) 7/2
+A: We know the Answer Hints: (b). With the Answer Hints: (b), we will answer the question. The answer is (b).
+
+Q: A person is traveling at 20 km/hr and reached his destiny in 2.5 hr then find the distance? (Hint: The answer is near to (d), (c)).
+Answer Choices: (a) 53 km (b) 55 km (c) 52 km (d) 60 km (e) 50 km
+A: We know the Answer Hints: (d), (c). With the Answer Hints: (d), (c), we will answer the question. The answer is (e).
+
+Q: How many keystrokes are needed to type the numbers from 1 to 500? (Hint: The answer is near to (a)).
+Answer Choices: (a) 1156 (b) 1392 (c) 1480 (d) 1562 (e) 1788
+A: We know the Answer Hints: (a). With the Answer Hints: (a), we will answer the question. The answer is (b).
+
+Q: John found that the average of 15 numbers is 40. If 10 is added to each number then the mean of the numbers is? (Hint: The answer is near to (a), (d)).
+Answer Choices: (a) 50 (b) 45 (c) 65 (d) 78 (e) 64
+A: We know the Answer Hints: (a), (d). With the Answer Hints: (a), (d), we will answer the question. The answer is (a).
+
+Q: If a / b = 3/4 and 8a + 5b = 22,then find the value of a. (Hint: The answer is near to (a)).
+Answer Choices: (a) 1/2 (b) 3/2 (c) 5/2 (d) 4/2 (e) 7/2
+A: We know the Answer Hints: (a). With the Answer Hints: (a), we will answer the question. The answer is (b).
+
+Q: A person is traveling at 20 km/hr and reached his destiny in 2.5 hr then find the distance? (Hint: The answer is near to (b)).
+Answer Choices: (a) 53 km (b) 55 km (c) 52 km (d) 60 km (e) 50 km
+A: We know the Answer Hints: (b). With the Answer Hints: (b), we will answer the question. The answer is (e).
+
+Q: How many keystrokes are needed to type the numbers from 1 to 500? (Hint: The answer is near to (b), (a)).
+Answer Choices: (a) 1156 (b) 1392 (c) 1480 (d) 1562 (e) 1788
+A: We know the Answer Hints: (b), (a). With the Answer Hints: (b), (a), we will answer the question. The answer is (b).
