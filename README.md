@@ -1,5 +1,7 @@
 # Progressive-Hint Prompting Improves Reasoning in Large Language Models
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/https-arxiv-org-abs-2304-09797/arithmetic-reasoning-on-gsm8k)](https://paperswithcode.com/sota/arithmetic-reasoning-on-gsm8k?p=https-arxiv-org-abs-2304-09797)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/https-arxiv-org-abs-2304-09797/arithmetic-reasoning-on-svamp)](https://paperswithcode.com/sota/arithmetic-reasoning-on-svamp?p=https-arxiv-org-abs-2304-09797)
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg)
 
 <div align="center">
