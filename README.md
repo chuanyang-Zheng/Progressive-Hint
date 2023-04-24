@@ -2,6 +2,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/progressive-hint-prompting-improves-reasoning/arithmetic-reasoning-on-gsm8k)](https://paperswithcode.com/sota/arithmetic-reasoning-on-gsm8k?p=progressive-hint-prompting-improves-reasoning)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/progressive-hint-prompting-improves-reasoning/math-word-problem-solving-on-svamp)](https://paperswithcode.com/sota/math-word-problem-solving-on-svamp?p=progressive-hint-prompting-improves-reasoning)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2304.09797)
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg)
 
 <div align="center">
