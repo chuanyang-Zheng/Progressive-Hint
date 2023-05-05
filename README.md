@@ -25,14 +25,20 @@ PHP is a simple, effective and powerful method, as shown in Figure 1. It is can 
 - [04/25/2023]: We update the dataset!
 - [04/21/2023]: We upload the code!
 
-## GSM8K Dataset Leaderboard
+## PaperWithCode Leaderboard
 
-We achieve the SOTA performance on GSM8K dataset, as the shown in [Leaderboard of PaperWithCode](https://paperswithcode.com/sota/arithmetic-reasoning-on-gsm8k) (Date: April 21, 2023)
+We achieve the SOTA performance on AQuA, SVAMP, GSM8K and MATH dataset, as the shown in [SVAMP Leaderboard](https://paperswithcode.com/sota/math-word-problem-solving-on-svamp), [GSM8K Leaderboard](https://paperswithcode.com/sota/arithmetic-reasoning-on-gsm8k) and [MATH Leaderboard](https://paperswithcode.com/sota/math-word-problem-solving-on-math) (Date: May 05, 2023)
 <div align="center">
   <img src="resources/leaderboard.png">
 </div>
 <p align="center">
   We achieve the SOTA performnce on GSM8K dataset.
+</p>
+<div align="center">
+  <img src="resources/leaderboard_math.png.png">
+</div>
+<p align="center">
+  We achieve the SOTA performnce on MATH dataset.
 </p>
 
 ## Installation
