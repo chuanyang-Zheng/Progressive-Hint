@@ -23,7 +23,87 @@ openai.api_key = "Put Your Key Here"
 
 
 
+def find_math_answer(s):
 
+    assert('boxed' in s)
+    # s = s.replace(",", "")
+    ans = s.split('boxed')[-1]
+    if(ans[0] == '{'):
+        stack = 1
+        a = ''
+        for c in ans[1:]:
+            if(c == '{'):
+                stack += 1
+                a += c
+            elif(c == '}'):
+                stack -= 1
+                if(stack == 0): break
+                a += c
+            else:
+                a += c
+    else:
+        a = ans.split('$')[0].strip()
+    a=_strip_string(a)
+    return a
+
+def extract_math_answer(pred_str):
+    if('The answer is ' in pred_str):
+        pred = pred_str.split('The answer is ')[-1].strip()
+    elif('the answer is ' in pred_str):
+        pred = pred_str.split('the answer is ')[-1].strip()
+    elif 'boxed' in pred_str:
+        ans = pred_str.split('boxed')[-1]
+        if (ans[0] == '{'):
+            stack = 1
+            a = ''
+            for c in ans[1:]:
+                if (c == '{'):
+                    stack += 1
+                    a += c
+                elif (c == '}'):
+                    stack -= 1
+                    if (stack == 0): break
+                    a += c
+                else:
+                    a += c
+        else:
+            a = ans.split('$')[0].strip()
+        a = _strip_string(a)
+        pred=a
+
+    else:
+        pattern = '-?\d*\.?\d+'
+        pred = re.findall(pattern, pred_str)
+        if(len(pred) >= 1):
+            # print(pred_str)
+            pred = pred[-1]
+        else: pred = ''
+    if pred != "":
+        if pred[-1] == ".":
+            pred = pred[:-1]
+        if pred[-1] == "/":
+            pred = pred[:-1]
+    pred=_strip_string(pred)
+    if 'boxed' in pred:
+        ans = pred.split('boxed')[-1]
+        if (ans[0] == '{'):
+            stack = 1
+            a = ''
+            for c in ans[1:]:
+                if (c == '{'):
+                    stack += 1
+                    a += c
+                elif (c == '}'):
+                    stack -= 1
+                    if (stack == 0): break
+                    a += c
+                else:
+                    a += c
+        else:
+            a = ans.split('$')[0].strip()
+        a = _strip_string(a)
+        pred=a
+    return pred
 
 def data_reader(args):
     questions = []
@@ -40,6 +120,13 @@ def data_reader(args):
                 choice = "Answer Choices:" + choice
                 questions.append(json_res["question"].strip() + " " + choice)
                 answers.append(json_res["correct"])
+    elif args.dataset in ["algebra","counting_and_probability","geometry","intermediate_algebra","number_theory","prealgebra","precalculus"]:
+
+        for filename in os.listdir(args.dataset_path):
+            if (filename.endswith('.json')):
+                d = json.load(open(args.dataset_path + '/' + filename))
+                questions.append(d['problem'])
+                answers.append(find_math_answer(d['solution']))
     elif args.dataset == "gsm8k":
         with open(args.dataset_path) as f:
             lines = f.readlines()
@@ -89,6 +176,11 @@ def data_reader(args):
 
 def answer_cleansing(args, pred):
     # print("pred_before : " + pred)
+
+    if args.dataset in ["algebra","counting_and_probability","geometry","intermediate_algebra","number_theory","prealgebra","precalculus"]:
+        # pred = pred.replace(",", "")
+        pred_final=extract_math_answer(pred)
+        return pred_final
 
     if args.method in ("few_shot", "few_shot_cot"):
         preds = pred.split(args.direct_answer_trigger_for_fewshot)
@@ -338,7 +430,13 @@ def main():
     print(args)
     dataset_path = {"addsub": "AddSub/AddSub.json", "aqua": "AQuA/AQuA.json", "gsm8k": "gsm8k/gsm8k.jsonl",
                     "multiarith": "MultiArith/MultiArith.json", "singleeq": "SingleEq/SingleEq.json",
-                    "svamp": "SVAMP/SVAMP.json"}
+                    "svamp": "SVAMP/SVAMP.json", "digit5": "digit5/digit5.pkl", "digit3": "digit3/digit3.pkl",
+                    "digit4": "digit4/digit4.pkl", "digit6": "digit6/digit6.pkl", "digit7": "digit7/digit7.pkl",
+                    "algebra": "math/algebra",
+                    "counting_and_probability": "math/counting_and_probability", "geometry": "math/geometry",
+                    "intermediate_algebra": "math/intermediate_algebra", "number_theory": "math/number_theory",
+                    "prealgebra": "math/prealgebra", "precalculus": "math/precalculus", }
+
     args.dataset_path = "dataset/{}".format(dataset_path[args.dataset])
 
     # load prompts
