@@ -6,7 +6,7 @@ import openai
 import json
 import re
 import numpy as np
-from utils import delete_extra_zero
+from utils import delete_extra_zero,_strip_string
 import argparse
 from statistics import mean
 from collections import Counter
