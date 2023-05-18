@@ -33,13 +33,13 @@ We achieve the SOTA performance on AQuA, SVAMP, GSM8K and MATH dataset, as the s
   <img src="resources/leaderboard.png">
 </div>
 <p align="center">
-  We achieve the SOTA performnce on GSM8K dataset.
+  We achieve the SOTA performance on GSM8K dataset.
 </p>
 <div align="center">
   <img src="resources/leaderboard_math.png">
 </div>
 <p align="center">
-  We achieve the SOTA performnce on MATH dataset.
+  We achieve the SOTA performance on MATH dataset.
 </p>
 
 ## Installation
