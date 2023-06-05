@@ -21,6 +21,7 @@ This repository contains the official Pytorch implementation of code for [PHP](h
 PHP is a simple, effective and powerful method, as shown in Figure 1. It is can be easily combined with preivious works such as Chain-of-Thought and Self-Consistency, as they are orthogonal.
 
 ## News
+- [06/05/2023]: With PHP and Self-Consistency (K=40), we achieve new SOTA of GSM8K dataset: 96.5!
 - [05/11/2023]: We update the code and data of MATH dataset
 - [05/02/2023]: We achieve the SOTA performance 53.9% on MATH dataset, which is the currently most challenging reasoning dataset! We will update our paper and the code soon! Thank you for your attention!!!
 - [04/25/2023]: We update the dataset!
