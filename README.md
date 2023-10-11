@@ -78,9 +78,9 @@ We Only show Complex CoT with GPT-3.5-Turbo and GPT-4 Here. For more experiments
 
 ## Citation
 ```
-@article{zheng2023php,
-  title={Progressive-Hint Prompting Improves Reasoning in Large Language Models},
-  author={Zheng Chuanyang, Liu Zhengying, Xie Enze, Li Zhenguo, Li Yu},
+@article{zheng2023progressive,
+  title={Progressive-hint prompting improves reasoning in large language models},
+  author={Zheng, Chuanyang and Liu, Zhengying and Xie, Enze and Li, Zhenguo and Li, Yu},
   journal={arXiv preprint arXiv:2304.09797},
   year={2023}
 }
